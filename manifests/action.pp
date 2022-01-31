@@ -126,6 +126,7 @@ define curator::action (
   $shrink_node            = undef,
   $shrink_prefix          = undef,
   $shrink_suffix          = undef,
+  $skip_flush             = 'False',
   $skip_repo_fs_check     = undef,
   $timeout_override       = undef,
   $value                  = undef,
