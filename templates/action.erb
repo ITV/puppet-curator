@@ -5,7 +5,9 @@
       continue_if_exception: <%= @continue_if_exception %>
       disable_action: <%= @disable_action %>
       ignore_empty_list: <%= @ignore_empty_list %>
+<% if @action == 'close' %>
       skip_flush: <%= @skip_flush %>
+<% end -%>
 <% if @ignore_unavailable then %>      ignore_unavailable: <%= @ignore_unavailable %>
 <% end -%>
 <% if @allocation_type and ! @post_allocation then %>      allocation_type: <%= @allocation_type %>
